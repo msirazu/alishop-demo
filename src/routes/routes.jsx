@@ -8,7 +8,7 @@ const router = createBrowserRouter([
     {path: '/', element: <HomeLayout/>, children: [
         {path: '', element: <Home/>},
         {path: 'product-details/:Id', element: <ProductDetails/>, loader: async() => {
-            const productRes = await fetch('/data/products-category.json');
+            const productRes = await fetch('/data/products-data.json');
             return productRes.json();
         }}
     ], HydrateFallback: ()=> {
