@@ -12,13 +12,8 @@ const HomeLayout = () => {
                     <Navbar/>
                 </nav>
             </header>
-            <main className="md:w-11/12">
-                <aside>
-
-                </aside>
-                <section>
+            <main className="md:w-11/12 h-screen mx-auto">
                     <Outlet/>
-                </section>
             </main>
             <footer className="bg-footer-500">
                 <Footer/>

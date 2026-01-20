@@ -1,0 +1,12 @@
+[
+    {"id": 1, "name": "religious items"}, 
+    {"id": 2, "name": "lights"}, 
+    {"id": 3, "name": "home appliances"},
+    {"id": 4, "name": "gadgets"},
+    {"id": 5, "name": "toys & games"},
+    {"id": 6, "name": "baby products"},
+    {"id": 7, "name": "home & living"},
+    {"id": 8, "name": "clothing"},
+    {"id": 9, "name": "food & grocery"},
+    {"id": 10, "name": "fashion"}
+]
