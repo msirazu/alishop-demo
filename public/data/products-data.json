@@ -45,5 +45,53 @@
         "desShort": "Car Safety Hammer / Emergency Escape Tool",
         "color": "red",
         "slug": "car-safety-hammer-emergency-escape-tool"
+    }, 
+    {
+        "id": 5,
+        "title": "DEFENDER Rechargeable Table Fan AC/DC Auto",
+        "sku": "DS-DEFE-ARBO",
+        "price": 5250,
+        "discountPrice": 4950,
+        "imageUrl": "https://alishop.com.bd/_next/image?url=https%3A%2F%2Fdigitalseba.s3.ap-southeast-1.amazonaws.com%2F1766227641779_defender-fan-2.png&w=256&q=75",
+        "desLong": "DEFENDER Rechargeable Table Fan AC/DC Auto",
+        "desShort": "DEFENDER Rechargeable Table Fan AC/DC Auto",
+        "color": "white",
+        "slug": "defender-rechargeable-table-fan-ac-dc-auto"
+    },
+    {
+        "id": 6,
+        "title": "Solar Bulb Pointy Shaped",
+        "sku": "DS-SOLA-ZDB7",
+        "price": 790,
+        "discountPrice": 490,
+        "imageUrl": "https://alishop.com.bd/_next/image?url=https%3A%2F%2Fdigitalseba.s3.ap-southeast-1.amazonaws.com%2F1766203347071_solar-bulb-a.png&w=256&q=75",
+        "desLong": "Solar Bulb Pointy Shaped",
+        "desShort": "Solar Bulb Pointy Shaped",
+        "color": "black",
+        "slug": "solar-bulb-round-shaped"
+    },
+    {
+        "id": 7,
+        "title": "Remax RPP-596 40000 mAh Power Bank",
+        "sku": "DS-REMA-EQZO",
+        "price": 4490,
+        "discountPrice": 3690,
+        "imageUrl": "https://alishop.com.bd/_next/image?url=https%3A%2F%2Fdigitalseba.s3.ap-southeast-1.amazonaws.com%2F1766058309031_Remax-40000.png&w=256&q=75",
+        "desLong": "Remax RPP-596 40000 mAh Power Bank",
+        "desShort": "Remax RPP-596 40000 mAh Power Bank",
+        "color": "black",
+        "slug": "remax-rpp-596-40000-mah-power-bank"
+    },
+    {
+        "id": 8,
+        "title": "Rounded Bamboo Table Lamp Shade",
+        "sku": "DS-ROUN-FU57",
+        "price": 1590,
+        "discountPrice": 990,
+        "imageUrl": "https://alishop.com.bd/_next/image?url=https%3A%2F%2Fdigitalseba.s3.ap-southeast-1.amazonaws.com%2F1766057396705_bamboo-light.png&w=256&q=75",
+        "desLong": "Rounded Bamboo Table Lamp Shade",
+        "desShort": "Rounded Bamboo Table Lamp Shade",
+        "color": "brown",
+        "slug": "rounded-bamboo-lamp"
     }
 ]
