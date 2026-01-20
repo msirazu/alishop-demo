@@ -7,6 +7,11 @@
 
 @theme {
     --color-primary: #1B6392;
+    --color-nav: #F2F4F5;
+    --color-footer-500: #191C1F;
+    --color-footer-400: #3A3F42;
+    --color-base-500: #929FA5;
+
 
     --font-poppins: "Poppins", sans-serif;
     --font-roboto: "Roboto", sans-serif;

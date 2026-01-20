@@ -1,17 +1,26 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
+import Navbar from "../components/header/Navbar";
 
 const HomeLayout = () => {
     return (
-        <div className="md:w-11/12 mx-auto">
+        <div className="mx-auto">
             <header>
                 <Header/>
+                <nav>
+                    <Navbar/>
+                </nav>
             </header>
-            <main>
-                <Outlet/>
+            <main className="md:w-11/12">
+                <aside>
+
+                </aside>
+                <section>
+                    <Outlet/>
+                </section>
             </main>
-            <footer>
+            <footer className="bg-footer-500">
                 <Footer/>
             </footer>
         </div>

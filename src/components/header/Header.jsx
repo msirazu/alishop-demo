@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className="bg-primary px-5 py-2 font-poppins w-full">
-            <section className='hidden md:flex justify-between py-2'>
+            <section className='hidden lg:flex justify-between py-2'>
                 <div>
                     <h6 className='text-white text-sm'>Welcome to AliShop online eCommerce store.</h6>
                 </div>
