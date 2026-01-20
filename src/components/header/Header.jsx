@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className="bg-primary px-5 py-2 font-poppins w-full">
-            <section className='flex justify-between py-2'>
+            <section className='hidden md:flex justify-between py-2'>
                 <div>
                     <h6 className='text-white text-sm'>Welcome to AliShop online eCommerce store.</h6>
                 </div>
@@ -31,13 +31,18 @@ const Header = () => {
                     <img className='w-50' src={logo}/>
                     </Link>
                 </div>
-                <div className='bg-white flex-[3]'>
+                <div className='bg-white flex-3 hidden sm:flex'>
                     <SearchBar />
                 </div>
                 <div className='flex gap-5 flex-1 justify-end text-white text-xl items-center'>
                     <FaCartArrowDown className='hover-icons'/>
                     <FaHeart/>
                     <FaRegUser/>
+                </div>
+            </section>
+            <section>
+                <div className='bg-white sm:hidden my-2'>
+                    <SearchBar />
                 </div>
             </section>
         </div>
