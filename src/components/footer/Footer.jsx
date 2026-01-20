@@ -69,7 +69,7 @@ const Footer = () => {
            </div>
         </section>
         <section className='text-center border-t border-gray-600 p-5'>
-            <p className='text-base-500'>AliShop eCommerce © {currentYear}. Design by <span className='font-bold hover:text-blue-300 text-white'><Link target='_blank' to='https://digitalsebait.com/'>Digital Seba</Link></span></p>
+            <p className='text-base-500 text-sm'>AliShop eCommerce © {currentYear}. Design by <span className='font-bold hover:text-blue-300 text-white'><Link target='_blank' to='https://digitalsebait.com/'>Digital Seba</Link></span></p>
         </section>
         </div>
     );
