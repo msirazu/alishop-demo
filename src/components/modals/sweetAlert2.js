@@ -13,7 +13,7 @@ const sweetAlert2 = () => {
   }
 });
 Toast.fire({
-  icon: "Success",
+  icon: "success",
   title: "Added to cart successfully"
 });
 }
