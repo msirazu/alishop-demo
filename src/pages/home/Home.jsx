@@ -30,7 +30,7 @@ const Home = () => {
             </section>
             <section className="col-span-12 md:col-span-8 lg:col-span-10">
                 <div>
-                    <h5 className="uppercase font-bold text-xl text-center mb-2">products list</h5>
+                    <h5 className="uppercase font-bold text-2xl text-center mb-2">products list</h5>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 py-2">
                     {products.map(product => <HomeProductsList key={product.id} product={product}/>)}
