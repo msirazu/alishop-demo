@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className="bg-primary px-5 py-2 font-poppins w-full">
-            <section className='hidden lg:flex justify-between py-2'>
+        <div className="bg-primary py-2 font-poppins w-full">
+            <section className='hidden lg:flex justify-between py-2 px-5'>
                 <div>
                     <h6 className='text-white text-sm'>Welcome to AliShop online eCommerce store.</h6>
                 </div>
@@ -25,7 +25,7 @@ const Header = () => {
                     <div><p>BDT</p></div>
                 </div>
             </section>
-            <section className='flex items-center gap-5 w-full py-3'>
+            <section className='flex items-center gap-5 w-full px-5 py-3 border-t border-gray-500'>
                 <div className='flex-1'>
                     <Link to='/'>
                     <img className='w-50' src={logo}/>
@@ -34,10 +34,12 @@ const Header = () => {
                 <div className='bg-white flex-3 hidden sm:flex'>
                     <SearchBar />
                 </div>
-                <div className='flex gap-5 flex-1 justify-end text-white text-xl items-center'>
+                <div className='flex gap-2 flex-1 justify-end text-white text-xl items-center'>
+                    <Link to='/checkout'>
                     <FaCartArrowDown className='hover-icons'/>
-                    <FaHeart/>
-                    <FaRegUser/>
+                    </Link>
+                    <FaHeart className='hover-icons'/>
+                    <FaRegUser className='hover-icons'/>
                 </div>
             </section>
             <section>
