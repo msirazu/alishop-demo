@@ -1,4 +1,5 @@
 import sweetAlert from "../components/modals/sweetAlert";
+import sweetAlert2 from "../components/modals/sweetAlert2";
 
 const getStoredCartProduct = () => {
     const cartProducts = localStorage.getItem('cart');
@@ -18,7 +19,8 @@ const addToLocalStorage = (id) => {
     } 
         storedProducts.push(id);
         const data = JSON.stringify(storedProducts);
-        localStorage.setItem('cart', data)
+        localStorage.setItem('cart', data);
+        sweetAlert2();
 }
 
 export { getStoredCartProduct, addToLocalStorage };

@@ -25,7 +25,8 @@ const Header = () => {
                     <div><p>BDT</p></div>
                 </div>
             </section>
-            <section className='flex items-center gap-5 w-full px-5 py-3 border-t border-gray-500'>
+            <hr className='border-gray-500 hidden lg:block mb-1 mt-1'/>
+            <section className='flex items-center gap-5 w-full px-5 py-3'>
                 <div className='flex-1'>
                     <Link to='/'>
                     <img className='w-50' src={logo}/>
@@ -43,7 +44,7 @@ const Header = () => {
                 </div>
             </section>
             <section>
-                <div className='bg-white sm:hidden my-2'>
+                <div className='bg-white sm:hidden my-2 mx-5'>
                     <SearchBar />
                 </div>
             </section>
