@@ -1,11 +1,17 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToLocalStorage } from "../../utilities/addToLocalStorageDatabase";
 
 const ProductDetails = () => {
     const allData = useLoaderData();
     const { Id } = useParams();
     const convertedId = Number(Id);
     const product = allData.find(p => p.id === convertedId)
-    const { title, price, discountPrice, imageUrl, sku, color } = product; 
+    const { title, price, discountPrice, imageUrl, sku, color } = product;
+    
+    const handleAddToCart = (id) => {
+        addToLocalStorage(id);
+    }
+
     return (
         <div className="m-5">
         <section className="flex flex-col md:flex-row justify-center gap-5 font-poppins">
@@ -27,7 +33,7 @@ const ProductDetails = () => {
                 <p className="capitalize">{color}</p>
                 <div className="">
                 <button className="capitalize mt-5 bg-secondary py-4 text-white font-bold hover:cursor-pointer hover:bg-[#F16622] w-full">buy now</button>
-                <button className="capitalize mt-3 bg-white py-4 text-secondary font-bold hover:cursor-pointer hover:bg-secondary hover:text-white border border-secondary w-full">add to cart</button>
+                <button onClick={() => handleAddToCart(convertedId)} className="capitalize mt-3 bg-white py-4 text-secondary font-bold hover:cursor-pointer hover:bg-secondary hover:text-white border border-secondary w-full">add to cart</button>
                 <button className="capitalize mt-3 bg-[#0a46a0] py-4 text-white font-bold hover:cursor-pointer w-full">আমাদের সাথে সরাসরি কথা বলুন</button>
                 </div>
             </div>
