@@ -1,7 +1,11 @@
+import { use } from "react";
 import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import DataContext from "../../auth/context/DataContext";
 
 const Breadcrumbs = () => {
+    const data = use(DataContext);
+
     return (
         <div className="breadcrumbs text-sm">
   <ul>
