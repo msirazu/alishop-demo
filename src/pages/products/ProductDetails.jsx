@@ -7,7 +7,8 @@ const ProductDetails = () => {
     const product = allData.find(p => p.id === convertedId)
     const { title, price, discountPrice, imageUrl, sku, color } = product; 
     return (
-        <div className="flex flex-col md:flex-row justify-center gap-5 m-5 font-poppins">
+        <div className="m-5">
+        <section className="flex flex-col md:flex-row justify-center gap-5 font-poppins">
             <div className="md:w-[50%] border border-gray-200 p-5 flex justify-center items-center">
                 <img src={imageUrl}/>
             </div>
@@ -24,8 +25,16 @@ const ProductDetails = () => {
                 <p className="text-md">Select Package & Quantity</p>
                 <p className="my-2 font-bold">Color</p>
                 <p className="capitalize">{color}</p>
-                <button className="capitalize my-5 bg-secondary w-full py-4 text-white font-bold hover:cursor-pointer hover:bg-[#F16622]">buy now</button>
+                <div className="">
+                <button className="capitalize mt-5 bg-secondary py-4 text-white font-bold hover:cursor-pointer hover:bg-[#F16622] w-full">buy now</button>
+                <button className="capitalize mt-3 bg-white py-4 text-secondary font-bold hover:cursor-pointer hover:bg-secondary hover:text-white border border-secondary w-full">add to cart</button>
+                <button className="capitalize mt-3 bg-[#0a46a0] py-4 text-white font-bold hover:cursor-pointer w-full">আমাদের সাথে সরাসরি কথা বলুন</button>
+                </div>
             </div>
+        </section>
+        <section className="my-5 border p-5 border-gray-200">
+            <h5 className="text-center font-bold text-2xl uppercase text-secondary">description</h5>
+        </section>
         </div>
     );
 };

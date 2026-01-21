@@ -1,14 +1,15 @@
 import { FaHome } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Breadcrumbs = () => {
     return (
         <div className="breadcrumbs text-sm">
   <ul>
     <li>
-      <a>
+      <Link to='/'>
         <FaHome/>
         Home
-      </a>
+      </Link>
     </li>
     <li>
       <a>
