@@ -1,3 +1,5 @@
+import sweetAlert from "../components/modals/sweetAlert";
+
 const getStoredCartProduct = () => {
     const cartProducts = localStorage.getItem('cart');
     if (cartProducts) {
@@ -11,7 +13,7 @@ const addToLocalStorage = (id) => {
     const storedProducts = getStoredCartProduct();
 
     if (storedProducts.includes(id)) {
-        alert('already exist on cart');
+        sweetAlert();
         return;
     } 
         storedProducts.push(id);
