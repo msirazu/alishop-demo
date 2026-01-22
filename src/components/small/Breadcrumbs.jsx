@@ -16,11 +16,11 @@ const Breadcrumbs = () => {
         Home
       </Link>
     </li>
-    <li>
-      <Link>
-        {product ? product.title : null}
+    {product && <li>
+      <Link to={`/product-details/${product.id}`}>
+        {product.title}
       </Link>
-    </li>
+    </li>}
   </ul>
 </div>
     );
