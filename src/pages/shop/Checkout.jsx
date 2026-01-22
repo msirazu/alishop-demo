@@ -6,7 +6,6 @@ const Checkout = () => {
     const data = use(DataContext);
     const localStorageData = getStoredCartProduct();
     const cartProduct = data.filter(product => localStorageData.includes(product.id));
-    console.log(cartProduct)
     return (
         <div className="">
             {cartProduct.map(p => 

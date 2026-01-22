@@ -6,8 +6,7 @@ import DataContext from "../../auth/context/DataContext";
 const Breadcrumbs = () => {
     const data = use(DataContext);
     const { Id } = useParams();
-    const newId = Number(Id);
-    const product = data.find(p => p);
+    const product = data.find(p => p.id === Number(Id));
     return (
         <div className="breadcrumbs text-sm">
   <ul>
@@ -19,7 +18,7 @@ const Breadcrumbs = () => {
     </li>
     <li>
       <Link>
-        {Id}
+        {product ? product.title : null}
       </Link>
     </li>
   </ul>
