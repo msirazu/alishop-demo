@@ -22,4 +22,7 @@
     .hover-icons {
         @apply w-10 h-10 p-2 hover:rounded-lg hover:bg-white/10 hover:cursor-pointer;
     }
+    .hover-icons-2 {
+        @apply w-8 h-8 p-2 hover:rounded-lg hover:bg-white/10 hover:cursor-pointer;
+    }
 }

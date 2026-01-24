@@ -14,12 +14,12 @@ const Header = () => {
                     <div>
                         <p className='text-white'>Follow us:</p>
                     </div>
-                    <div className='flex gap-2 text-white'>
-                        <FaFacebook />
-                        <FaTwitter />
-                        <FaPinterest />
-                        <FaInstagram />
-                        <FaYoutube />
+                    <div className='flex gap-1 text-white'>
+                        <FaFacebook className='hover-icons-2'/>
+                        <FaTwitter className='hover-icons-2'/>
+                        <FaPinterest className='hover-icons-2'/>
+                        <FaInstagram className='hover-icons-2'/>
+                        <FaYoutube className='hover-icons-2'/>
                     </div>
                     <div><p>Eng</p></div>
                     <div><p>BDT</p></div>

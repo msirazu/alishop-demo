@@ -6,7 +6,7 @@ const ProductDetails = () => {
     const { Id } = useParams();
     const convertedId = Number(Id);
     const product = allData.find(p => p.id === convertedId)
-    const { title, price, discountPrice, imageUrl, sku, color } = product;
+    const { title, price, discountPrice, imageUrl, sku, color, desLong, desShort } = product;
     
     const handleAddToCart = (id) => {
         addToLocalStorage(id);
@@ -40,6 +40,26 @@ const ProductDetails = () => {
         </section>
         <section className="my-5 border p-5 border-gray-200">
             <h5 className="text-center font-bold text-2xl uppercase text-secondary">description</h5>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
+                <div>
+                    <h3 className="capitalize font-bold text-xl">description</h3>
+                    <p>{desLong}</p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                        <h3 className="capitalize font-bold text-xl">feature</h3>
+                        <p>24/7 Customer support</p>
+                        <p>Secure payment method</p>
+                    </div>
+                    <div>
+                        <h3 className="capitalize font-bold text-xl">shipping information</h3>
+                        <p className="font-bold">Cash on Delivery:</p>
+                        <p>up to two days, ৳ 100</p>
+                        <p className="font-bold">bKash Delivery:</p>
+                        <p>2-3 days, ৳ 150</p>
+                    </div>
+                </div>
+            </div>
         </section>
         </div>
     );
