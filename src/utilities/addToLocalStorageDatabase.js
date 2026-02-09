@@ -1,8 +1,5 @@
-import sweetAlert from "../components/modals/sweetAlert";
-import sweetAlert2 from "../components/modals/sweetAlert2";
-
 const getStoredCartProduct = () => {
-    const cartProducts = localStorage.getItem('cart');
+    const cartProducts = localStorage.getItem('alishopCart');
     if (cartProducts) {
         return JSON.parse(cartProducts);
     } else {
@@ -14,13 +11,20 @@ const addToLocalStorage = (id) => {
     const storedProducts = getStoredCartProduct();
 
     if (storedProducts.includes(id)) {
-        sweetAlert();
-        return;
+        return false;
     } 
         storedProducts.push(id);
         const data = JSON.stringify(storedProducts);
-        localStorage.setItem('cart', data);
-        sweetAlert2();
+        localStorage.setItem('alishopCart', data);
+        return true;
 }
 
-export { getStoredCartProduct, addToLocalStorage };
+const removeFromLocalStorage = (id) => {
+    const storedData = getStoredCartProduct();
+    const updatedData = storedData.filter(storedId => storedId !== id);
+    const data = JSON.stringify(updatedData);
+    localStorage.setItem('alishopCart', data);
+    return updatedData;
+}
+
+export { getStoredCartProduct, addToLocalStorage, removeFromLocalStorage };

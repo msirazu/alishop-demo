@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { addToLocalStorage } from "../../utilities/addToLocalStorageDatabase";
+import { toast } from "react-toastify";
 
 const ProductDetails = () => {
     const allData = useLoaderData();
@@ -9,7 +10,12 @@ const ProductDetails = () => {
     const { title, price, discountPrice, imageUrl, sku, color, desLong, desShort } = product;
     
     const handleAddToCart = (id) => {
-        addToLocalStorage(id);
+        const isAdded = addToLocalStorage(id);
+        if (!isAdded) {
+            toast.warning('already in cart');
+        } else {
+            toast.success('added successfully');
+        }
     }
 
     return (
